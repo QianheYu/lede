@@ -68,7 +68,6 @@ jobs:
           # 例如:
           cat >> .config <<EOF
           #
-          #
           # Automatically generated file; DO NOT EDIT.
           # OpenWrt Configuration
           #
@@ -4696,7 +4695,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-cifsd is not set
           # CONFIG_PACKAGE_luci-app-cjdns is not set
           # CONFIG_PACKAGE_luci-app-clamav is not set
-          CONFIG_PACKAGE_luci-app-clash=y
+          # CONFIG_PACKAGE_luci-app-clash is not set
           CONFIG_PACKAGE_luci-app-commands=y
           # CONFIG_PACKAGE_luci-app-cshark is not set
           CONFIG_PACKAGE_luci-app-ddns=y
