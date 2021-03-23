@@ -3020,7 +3020,9 @@ jobs:
           #
           # Node.js
           #
-          # CONFIG_PACKAGE_node is not set
+          CONFIG_PACKAGE_node=y
+          CONFIG_NODEJS_ICU_NONE=y
+          # CONFIG_NODEJS_ICU_SMALL is not set
           # CONFIG_PACKAGE_node-arduino-firmata is not set
           # CONFIG_PACKAGE_node-cylon is not set
           # CONFIG_PACKAGE_node-cylon-firmata is not set
@@ -4148,7 +4150,7 @@ jobs:
           CONFIG_PACKAGE_libcap=y
           # CONFIG_PACKAGE_libcap-bin is not set
           # CONFIG_PACKAGE_libcap-ng is not set
-          # CONFIG_PACKAGE_libcares is not set
+          CONFIG_PACKAGE_libcares=y
           # CONFIG_PACKAGE_libcgroup is not set
           # CONFIG_PACKAGE_libcharset is not set
           # CONFIG_PACKAGE_libcli is not set
@@ -4228,7 +4230,7 @@ jobs:
           # CONFIG_PACKAGE_libestr is not set
           # CONFIG_PACKAGE_libev is not set
           # CONFIG_PACKAGE_libevdev is not set
-          # CONFIG_PACKAGE_libevent2 is not set
+          CONFIG_PACKAGE_libevent2=y
           # CONFIG_PACKAGE_libevent2-core is not set
           # CONFIG_PACKAGE_libevent2-extra is not set
           # CONFIG_PACKAGE_libevent2-openssl is not set
@@ -4289,7 +4291,7 @@ jobs:
           # CONFIG_PACKAGE_libhavege is not set
           # CONFIG_PACKAGE_libhiredis is not set
           # CONFIG_PACKAGE_libhowl is not set
-          # CONFIG_PACKAGE_libhttp-parser is not set
+          CONFIG_PACKAGE_libhttp-parser=y
           # CONFIG_PACKAGE_libhwloc is not set
           # CONFIG_PACKAGE_libi2c is not set
           # CONFIG_PACKAGE_libical is not set
@@ -4369,7 +4371,7 @@ jobs:
           # CONFIG_PACKAGE_libnewt is not set
           # CONFIG_PACKAGE_libnfnetlink is not set
           # CONFIG_PACKAGE_libnftnl is not set
-          # CONFIG_PACKAGE_libnghttp2 is not set
+          CONFIG_PACKAGE_libnghttp2=y
           # CONFIG_PACKAGE_libnids is not set
           # CONFIG_PACKAGE_libnl is not set
           # CONFIG_PACKAGE_libnl-core is not set
@@ -4778,7 +4780,7 @@ jobs:
           # end of Configuration
 
           # CONFIG_PACKAGE_luci-app-polipo is not set
-          CONFIG_PACKAGE_luci-app-pppoe-relay=y
+          # CONFIG_PACKAGE_luci-app-pppoe-relay is not set
           # CONFIG_PACKAGE_luci-app-privoxy is not set
           # CONFIG_PACKAGE_luci-app-ps3netsrv is not set
           CONFIG_PACKAGE_luci-app-qbittorrent=y
@@ -4815,14 +4817,14 @@ jobs:
           # CONFIG_PACKAGE_luci-app-statistics is not set
           # CONFIG_PACKAGE_luci-app-syncdial is not set
           # CONFIG_PACKAGE_luci-app-tinyproxy is not set
-          # CONFIG_PACKAGE_luci-app-transmission is not set
+          CONFIG_PACKAGE_luci-app-transmission=y
           # CONFIG_PACKAGE_luci-app-travelmate is not set
           CONFIG_PACKAGE_luci-app-ttyd=y
           # CONFIG_PACKAGE_luci-app-udpxy is not set
           # CONFIG_PACKAGE_luci-app-uhttpd is not set
           CONFIG_PACKAGE_luci-app-unblockmusic=y
-          # CONFIG_UnblockNeteaseMusic_Go is not set
-          # CONFIG_UnblockNeteaseMusic_NodeJS is not set
+          CONFIG_UnblockNeteaseMusic_Go=y
+          CONFIG_UnblockNeteaseMusic_NodeJS=y
           # CONFIG_PACKAGE_luci-app-unbound is not set
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-usb-printer=y
@@ -4832,7 +4834,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-app-vnstat=y
           # CONFIG_PACKAGE_luci-app-vpnbypass is not set
-          CONFIG_PACKAGE_luci-app-vsftpd=y
+          # CONFIG_PACKAGE_luci-app-vsftpd is not set
           # CONFIG_PACKAGE_luci-app-watchcat is not set
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wifischedule=y
@@ -5083,7 +5085,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-p910nd-vi is not set
           CONFIG_PACKAGE_luci-i18n-p910nd-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-p910nd-zh-tw is not set
-          CONFIG_PACKAGE_luci-i18n-pppoe-relay-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-qbittorrent-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-qos-ca is not set
           # CONFIG_PACKAGE_luci-i18n-qos-cs is not set
@@ -5168,6 +5169,31 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-sqm-vi is not set
           CONFIG_PACKAGE_luci-i18n-sqm-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-sqm-zh-tw is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-ca is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-cs is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-de is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-el is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-en is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-es is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-fr is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-he is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-hu is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-it is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-ja is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-ms is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-no is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-pl is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-pt is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-pt-br is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-ro is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-ru is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-sk is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-sv is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-tr is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-uk is not set
+          # CONFIG_PACKAGE_luci-i18n-transmission-vi is not set
+          CONFIG_PACKAGE_luci-i18n-transmission-zh-cn=y
+          # CONFIG_PACKAGE_luci-i18n-transmission-zh-tw is not set
           CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-upnp-ca is not set
@@ -5222,7 +5248,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-vnstat-vi is not set
           CONFIG_PACKAGE_luci-i18n-vnstat-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-vnstat-zh-tw is not set
-          CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-webadmin-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-wifischedule-it is not set
           # CONFIG_PACKAGE_luci-i18n-wifischedule-ja is not set
@@ -5388,10 +5413,10 @@ jobs:
           # CONFIG_PACKAGE_rtorrent is not set
           # CONFIG_PACKAGE_rtorrent-rpc is not set
           # CONFIG_PACKAGE_transmission-cli-openssl is not set
-          # CONFIG_PACKAGE_transmission-daemon-openssl is not set
+          CONFIG_PACKAGE_transmission-daemon-openssl=y
           # CONFIG_PACKAGE_transmission-remote-openssl is not set
           # CONFIG_PACKAGE_transmission-web is not set
-          # CONFIG_PACKAGE_transmission-web-control is not set
+          CONFIG_PACKAGE_transmission-web-control=y
           # end of BitTorrent
 
           #
@@ -5836,8 +5861,8 @@ jobs:
           #
           # NeteaseMusic
           #
-          # CONFIG_PACKAGE_UnblockNeteaseMusic is not set
-          # CONFIG_PACKAGE_UnblockNeteaseMusicGo is not set
+          CONFIG_PACKAGE_UnblockNeteaseMusic=y
+          CONFIG_PACKAGE_UnblockNeteaseMusicGo=y
           CONFIG_UnblockNeteaseMusicGo_INCLUDE_GOPROXY=y
           # end of NeteaseMusic
 
